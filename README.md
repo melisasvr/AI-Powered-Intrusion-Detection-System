@@ -26,13 +26,13 @@ This project implements an AI-Powered Intrusion Detection System (IDS) using dee
 ## Usage
 1. Generate a Synthetic Dataset
 To create a synthetic dataset for testing:
-- python generate_dataset.py
+- `python generate_dataset.py`
 - Output: Creates dataset.csv with 1000 samples of random packet data.
 - Note: This dataset is for testing only. The random labels mean the trained model won’t be effective for real intrusion detection.
 
 2. Train the Model
 - To train the IDS model using dataset.csv:
-- python deep_learning_ids.py --train --dataset dataset.csv
+- `python deep_learning_ids.py --train --dataset dataset.csv`
 - Output:
 - Loads dataset.csv and trains a hybrid CNN-LSTM model.
 - Displays training and validation loss/accuracy for each epoch.
